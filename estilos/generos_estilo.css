@@ -1,0 +1,17 @@
+#cuerpo_tabla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}   
+#tabla{
+    border-collapse: collapse;
+    width: 50%;
+    border: 1px solid #ddd; 
+    background-color: #f5f5dc;
+}
+.td_tabla{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; 
+}

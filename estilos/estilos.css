@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fffbea;
+}
+.titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    background-color: #008000;
+}
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    background-color: #333333;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
