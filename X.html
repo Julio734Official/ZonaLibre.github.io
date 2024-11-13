@@ -22,8 +22,66 @@
             padding: 0;
             margin: 0;
         }
+      .carousel-container {
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-slide {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            border-radius: 10px;
+        }
+      .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 24px;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .carousel-button.prev {
+            left: 10px;
+        }
+
+        .carousel-button.next {
+            right: 10px;
+      }
 
   </style>
+    <script>
+        let currentIndex = 0;
+
+    function moveSlide(direction) {
+        const slide = document.querySelector('.carousel-slide');
+        const images = document.querySelectorAll('.carousel-slide img');
+        const totalImages = images.length;
+
+        // Cambiar el índice actual en función de la dirección
+        currentIndex += direction;
+
+        // Asegurarse de que el índice esté en el rango adecuado
+        if (currentIndex < 0) {
+            currentIndex = totalImages - 1;
+        } else if (currentIndex >= totalImages) {
+            currentIndex = 0;
+        }
+        slide.style.transform = `translateX(${-currentIndex * 100}%)`;
+            }
+    </script>
 <body>
     <nav class="buscador">
             <ul>
