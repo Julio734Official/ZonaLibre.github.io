@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 <head>
     <title>MINICARROZA</title>
@@ -12,7 +11,7 @@
             --accent-color: #3498db;
             --text-color: #333;
             --light-bg: #f4f4f4;
-            --header-height: 60px; /* Ajusta el alto del header */
+            --header-height: 60px;
         }
 
         /* Estilos generales */
@@ -75,27 +74,27 @@
         }
 
         /* Estilos para el carrusel */
-        .carousel-container {
+        .carousel {
             position: relative;
             max-width: 600px;
-            margin: auto;
-            overflow: hidden;
+            margin: 80px auto; /* Deja espacio bajo el header */
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
-        
-        .banner-offset {
-            margin-top: calc(var(--header-height) + 20px); /* Añade espacio debajo del header */
-        }
-        
-        div {
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 1200px;
-        }
+
         .carousel img {
             width: 100%;
             display: block;
+            border-radius: 10px;
+            object-fit: cover;
+            height: 500px;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 50%;
         }
 
         /* Footer */
@@ -112,16 +111,6 @@
             h1 { font-size: 2rem; }
             h2 { font-size: 1.5rem; }
             h3 { font-size: 1.2rem; }
-        }
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente en las flechas */
-            padding: 10px;
-            border-radius: 50%;
-        }
-        .carousel-item img {
-            height: 500px; /* Altura fija opcional */
-            object-fit: cover;
         }
     </style>
 </head>
@@ -140,22 +129,21 @@
     </nav>
 </header>
 
+<!-- Carrusel de imágenes -->
 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-    <h1>Nombre del proyecto</h1>
-    <!-- Carrusel de imágenes -->
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="imagenes/Abril_en_paris.jpg" class="d-block w-100" alt="Primera imagen">
         </div>
         <div class="carousel-item">
-            <img src="Alguien_va_a_venir.jpg" class="d-block w-100" alt="Logo">
+            <img src="imagenes/Academia.jpg" class="d-block w-100" alt="Logo">
         </div>
         <div class="carousel-item">
-            <img src="Academia.jpg" class="d-block w-100" alt="Tercera imagen">
+            <img src="imagenes/Analectas.jpg" class="d-block w-100" alt="Tercera imagen">
         </div>
     </div>
 
-    <!-- Botones de navegación -->
+    <!-- Botones de navegación dentro de la imagen -->
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Anterior</span>
@@ -166,59 +154,41 @@
     </button>
 </div>
 
-    <!-- Alegoría de la carroza -->
-    <section class="alegoria">
-        <h1>Alegoría</h1>
-        <p>...</p>
-    </section>
+<!-- Secciones de contenido -->
+<section class="alegoria">
+    <h1>Alegoría</h1>
+    <p>...</p>
+</section>
 
-    <!-- Secciones de información -->
-    <section id="materiales">
-        <h2>Materiales usados</h2>
-        <p>Los materiales que se usaron fueron los siguientes:</p>
-        <ul>
-            <li>Madera</li>
-            <li>Plasticola</li>
-            <!-- Agregar más materiales según sea necesario -->
-        </ul>
-    </section>
+<section id="materiales">
+    <h2>Materiales usados</h2>
+    <p>Los materiales que se usaron fueron los siguientes:</p>
+    <ul>
+        <li>Madera</li>
+        <li>Plasticola</li>
+        <!-- Agregar más materiales según sea necesario -->
+    </ul>
+</section>
 
-    <section id="personajes">
-        <h2>Personajes de la carroza</h2>
-        <!-- Imágenes de los personajes -->
-    </section>
+<section id="personajes">
+    <h2>Personajes de la carroza</h2>
+</section>
 
-    <section id="proposito">
-        <h2>Propósito de la carroza</h2>
-        <p>En la materia de prácticas profesionalizantes a cargo de los profesores: Sanchez Aldo y Rueda, se nos propuso realizar una minicarroza como ...</p>
-    </section>
+<section id="proposito">
+    <h2>Propósito de la carroza</h2>
+    <p>En la materia de prácticas profesionalizantes a cargo de los profesores: Sanchez Aldo y Rueda, se nos propuso realizar una minicarroza como ...</p>
+</section>
 
-    <section>
-        <h2>¿COMO REALIZAMOS NUESTRA MINICARROZA?</h2>
-        <p>Para poder realizar nuestra minicarroza, en primera instancia debimos de elegir una tematica de la cual trataria la misma, en nuestro caso decidimos que nuestra carroza trataria sobre una caricatura denominada RICK AND MORTHY, la misma trata sobre la aventura de dos personajes a traves de diversas dimensiones y en cada una de ella se obtiene un aprendisaje, una moraleja. </p>
-        
-        <h3>Estructura de la base y chasis</h3>
-        <p>Para poder realizar nuestra estructura debimos de buscar o realizar un "chasis" el cual sostendría nuestra carroza. Para lograrlo decidimmos utilizar la base de un juguete, sin embargo al der demaciado pequeño no podría sostener de manera adecuada nuestra minicarroza, por lo que debimos de buscar soluciones y usando al final la base de un coche para bebes; al mismo lo modificamos para poder ubicar la base encima del mismo quedando de la siguiente manera: </p>
-        <!--imagen de el chasis-->
-        <p>La base como bien se puede ver, es de mandera (fibrofacil), para poder crear la base simplemente cortamos la madera dentro de las medidas propuestas por el profesor, las cuales eran de 1mx60.Y la falda fue hecha del mismo material respetando las siguientes medidas: a lo largo era de ...y a lo ancho de ... Para unir las partes de la base utilizamos fortex y clavos para que quedara una base segura y equilibrada. Usamos herramientas como amoladora (con disco para cortar madera), martillos, serrucho, entre otros para poder llegar al siguiente resultado: </p>
-        <!--imagen de la base de la minicarroza-->
-    </section>
-        
-    <section>
-    </section>
-
-        <section>
-    </section>
-
-        <section>
-    </section>
-    <!-- Incluir más contenido aquí como en el diseño original -->
-</div>
+<section>
+    <h2>¿CÓMO REALIZAMOS NUESTRA MINICARROZA?</h2>
+    <p>Para poder realizar nuestra minicarroza, en primera instancia debimos de elegir una tematica de la cual trataria la misma, en nuestro caso decidimos que nuestra carroza trataria sobre una caricatura denominada RICK AND MORTY...</p>
+</section>
 
 <footer>
     <!-- Pie de página -->
     <p>Proyecto Minicarroza - Todos los derechos reservados &copy; 2024</p>
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 </body>
