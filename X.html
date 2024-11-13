@@ -57,6 +57,7 @@
         }
 
         .carousel-container {
+            position: relative;
             max-width: 600px;
             margin: auto;
             overflow: hidden;
@@ -68,6 +69,23 @@
             width: 100%;
             height: 500px;
             object-fit: cover;
+        }
+
+        /* Flechas dentro de la imagen */
+        .carousel-control-prev,
+        .carousel-control-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .carousel-control-prev {
+            left: 10px;
+        }
+
+        .carousel-control-next {
+            right: 10px;
         }
 
         /* Footer */
