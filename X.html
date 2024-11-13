@@ -31,7 +31,7 @@
         .carousel-images {
             display: flex;
             width: 300%; /* 3 imágenes a la vez */
-            animation: slide 9s infinite; /* Animación de deslizamiento */
+            animation: slide 15s ease-in-out infinite; /* Animación de deslizamiento más lenta */
         }
 
         /* Estilos para cada imagen */
@@ -46,10 +46,19 @@
             0% {
                 transform: translateX(0);
             }
+            20% {
+                transform: translateX(0);
+            }
             33% {
                 transform: translateX(-100%);
             }
+            53% {
+                transform: translateX(-100%);
+            }
             66% {
+                transform: translateX(-200%);
+            }
+            86% {
                 transform: translateX(-200%);
             }
             100% {
@@ -66,9 +75,9 @@
             <!-- Imagen 1 -->
             <img src="imagenes/Academia.jpg" alt="Imagen 1">
             <!-- Imagen 2 -->
-            <img src="imagenes/La_opera.jpg" alt="Imagen 2">
+            <img src="imagenes/Academia2.jpg" alt="Imagen 2">
             <!-- Imagen 3 -->
-            <img src="imagenes/KKK.jpg" alt="Imagen 3">
+            <img src="imagenes/Academia3.jpg" alt="Imagen 3">
         </div>
     </div>
 
